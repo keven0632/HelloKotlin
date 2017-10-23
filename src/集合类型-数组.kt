@@ -56,6 +56,16 @@ fun main(args: Array<String>) {
     }
     //mutableList：Mutablist<类型>或muntabListOf(元素1，元素2...)
     //大小可变，类型不可变
-
+    var mutabListNum = mutableListOf<String>("一号线", "二号线", "三号线", "四号线", "五号线")
     //在末尾增加元素:add方法。添加另一个数组addAll方法
+    val arrayNum = arrayOf("七号线", "八号线")
+    mutabListNum.add("六号线")
+    mutabListNum.addAll(arrayNum)
+    //移除元素remove,移除指定位置removeAt
+    mutabListNum.remove("一号线")
+    mutabListNum.removeAt(3)
+
+    for (s in mutabListNum) {
+        println("MutabList列表$s")
+    }
 }
