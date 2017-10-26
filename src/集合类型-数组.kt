@@ -43,9 +43,10 @@ fun main(args: Array<String>) {
 
     //获取筛选重复数据后的数组：.distinct()或用.toSet()转换为Set
     val num = arrayOf(1, 2, 3, 4, 5, 6, 1, 2, 3, 1)
+    val p = arrayOf(1, 2, 0, 6, 7, 8, 5, 7, 4, 6)
     val oneToNum2 = num.distinct()
     for (i in oneToNum2) {
-        println("去重后$i")
+        println("去重后$i$p")
     }
     val numSet = num.toSet()
     println("numSet的长度${numSet.size}")
